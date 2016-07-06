@@ -5,7 +5,34 @@
  .header{
 	@include povh('');
  }
-	
+	.logo{
+		display: block;
+		text-align: center;
+		margin: 19px 0 95px 0;
+		img{
+			width: 230px;
+		}
+	}
+	.main-nav{
+		font-family: $book;
+		text-align: center;
+		color: #4d4d4d;
+		padding-bottom: 25px;
+		font-size: 28px;
+		ul{
+			display: flex;
+			justify-content: space-between;
+		}
+		li{
+			display: inline-block;
+		}
+		a{
+			text-decoration: none;
+			&:hover, &.active{
+				color: #000;
+			}
+		}
+	}
 /*----------end-header----------*/	
 
 
@@ -14,6 +41,36 @@
  .main{
 	@include povh('');
  }
+ 	.bnr{
+ 		text-align: center;
+ 		padding-bottom: 45px;
+ 		img{
+ 			max-width: 100%;
+ 		}
+ 	}
+	
+	.content_txt{
+		font-size: 25px;
+		color: #000000;
+		font-family: $book;
+		p{
+			padding: 0 0 35px 0;
+		}
+		h2{
+			font-family: $medium;
+			font-size: 28px;
+			padding-bottom: 50px;
+		}
+		figure{
+			padding: 40px 0 50px 0;
+		}
+	}
+		.title{
+			font-size: 29px;
+			border-bottom: 1px solid #858584;
+			padding-bottom: 25px;
+			margin-bottom: 25px;
+		}
 
 /*----------end main----------*/	
 
@@ -22,6 +79,26 @@
  
  .footer{
 	@include povh('');
+	.container{
+		padding-top: 32px;
+		border-top: 1px solid #858584;
+	}
+	margin-top: 20px;
+	line-height: 1.6;
+	strong{
+		display: block;
+		color: #000;
+	}
+	color: #4d4d4d;
+	font-size: 25px;
+	h4{
+		color: #000;
+		padding-bottom: 43px;
+		font-size: 28px;
+	}
+	p{
+		padding-bottom: 35px;
+	}
  }
 
 /*----------end footer----------*/
