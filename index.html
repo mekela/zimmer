@@ -6,24 +6,7 @@
 		<meta name="keywords" content="">
 		<meta name="viewport" content="initial-scale=1"/>
 		<title>title</title>
-		<!--Favicon-->
-			<link rel="icon" type="image/png" href="favicon.ico">
-		<!--End Favicon-->
-		<!-- CSS -->
-			<link rel="stylesheet" href="css/jquery.fancybox.css" media="screen" >
-			<link href="css/screen.css" rel="stylesheet" media="screen">
-			<link href="css/style.css" rel="stylesheet" media="screen">
-		<!-- END OF CSS -->
-		<!--SCRIPT -->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-			<script src="js/jquery.fancybox.pack.js"></script>
-			<script src="js/modernizr.custom.js"></script>
-			<script src="js/jquery.bxslider.min.js"></script>
-			<script src="js/common.js"></script>
-			<!--[if IE]>  
-				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
-			<![endif]--> 
-		<!-- END OF SCRIPT -->
+		
 	</head>
 <body>
 <div class="wrapper">
@@ -32,8 +15,12 @@
 	<div class="container">
 		<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
 		<nav class="main-nav">
+			<div class="main-nav-trigger js-open">
+				<span class="active-mobile-menu">Team Events</span>
+				<i class="main-nav-trigger-icon"></i>
+			</div>
 			<ul>
-				<li><a href="#" class="active">Team Events</a></li>
+				<li class="active"><a href="#">Team Events</a></li>
 				<li><a href="#">Coaching</a></li>
 				<li><a href="#">Incentives</a></li>
 				<li><a href="#">Über Uns</a></li>
@@ -91,9 +78,23 @@
 				<strong>info@zimmer90.dev</strong>
 			</p>
 		</section>
+		<address><a href="#">Impressum</a></address>
 	</div>
 </footer>
 <!--end-footer-->
 </div>
+
+<!-- CSS -->
+	<link href="css/screen.css" rel="stylesheet" media="screen">
+	<link href="css/style.css" rel="stylesheet" media="screen">
+<!-- END OF CSS -->
+<!--SCRIPT -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<!--[if IE]>  
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+	<![endif]--> 
+<!-- END OF SCRIPT -->
+
 </body>
 </html>

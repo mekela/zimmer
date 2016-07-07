@@ -3,6 +3,56 @@
 
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
-  
+@include mq($max-width: 610px) {
+  .container{
+  	width: auto;
+  	padding: 0 30px;
+  }
+  .header{
+  	.container{
+  		padding: 0;
+  	}
+  }
+  .main-nav{
+  	li{
+  		border-bottom: 1px solid #b3b3b2;
+  		padding: 25px 30px;
+  		display: block;
+  		text-align: left;
+  		 &.active{
+  		 	display: none;
+  		 }
+  		 &:last-child{
+  		 	border-bottom: none;
+  		 }
+  		 a{
+  		 	font-size: 17px;
+  		 }
+  	}
+  	ul{
+  		display: none;
+  		border-top: 1px solid #b3b3b2;
+  	}
+  }
+  .main-nav-trigger{
+  	display: block;
+  	cursor: pointer;
+  }
+  .footer{
+  	margin: 0 30px;
+  	.container{
+  		padding-left: 0;
+  		padding-right: 0;
+  	}
+  }
+  .content_txt{
+  	figure{
+  		white-space: nowrap;
+		word-wrap: normal;
+		overflow-x: scroll;
+  		img{
+  			display: inline-block;
+  		}
+  	}
+  }
 }

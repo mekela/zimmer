@@ -8,31 +8,52 @@
 	.logo{
 		display: block;
 		text-align: center;
-		margin: 19px 0 95px 0;
+		margin: 10px 0 65px 0;
 		img{
-			width: 230px;
+			width: 173px;
 		}
 	}
 	.main-nav{
 		font-family: $book;
 		text-align: center;
 		color: #4d4d4d;
-		padding-bottom: 25px;
-		font-size: 28px;
+		padding-bottom: 11px;
+		font-size: 18px;
 		ul{
 			display: flex;
 			justify-content: space-between;
 		}
 		li{
 			display: inline-block;
+			&:hover, &.active{
+				a{color: #000;}
+			}
 		}
 		a{
 			text-decoration: none;
-			&:hover, &.active{
-				color: #000;
-			}
 		}
 	}
+	.main-nav-trigger{
+		@include povh('');
+		display: none;
+		padding: 0 30px 20px 30px;
+	}
+		.active-mobile-menu{
+			float: left;
+			color: #000;
+			font-size: 17px;
+		}
+		.main-nav-trigger-icon{
+			display: block;
+			float: right;
+			height: 25px;
+			width: 28px;
+			background:url(../img/menu-icon.png) no-repeat top center;
+			&.active{
+				background-position: center bottom;
+			}
+		}
+
 /*----------end-header----------*/	
 
 
@@ -43,33 +64,34 @@
  }
  	.bnr{
  		text-align: center;
- 		padding-bottom: 45px;
+ 		padding-bottom: 32px;
  		img{
- 			max-width: 100%;
+ 			width: 100%;
  		}
  	}
 	
 	.content_txt{
-		font-size: 25px;
+		font-size: 16px;
 		color: #000000;
 		font-family: $book;
 		p{
-			padding: 0 0 35px 0;
+			padding: 0 0 20px 0;
 		}
 		h2{
 			font-family: $medium;
-			font-size: 28px;
-			padding-bottom: 50px;
+			font-size: 18px;
+			padding-bottom: 13px;
 		}
 		figure{
-			padding: 40px 0 50px 0;
+			padding: 10px 0 10px 0;
+			width: 100%;
 		}
 	}
 		.title{
-			font-size: 29px;
+			font-size: 18px;
 			border-bottom: 1px solid #858584;
-			padding-bottom: 25px;
-			margin-bottom: 25px;
+			padding-bottom: 15px;
+			margin-bottom: 15px;
 		}
 
 /*----------end main----------*/	
@@ -80,7 +102,7 @@
  .footer{
 	@include povh('');
 	.container{
-		padding-top: 32px;
+		padding-top: 12px;
 		border-top: 1px solid #858584;
 	}
 	margin-top: 20px;
@@ -90,14 +112,25 @@
 		color: #000;
 	}
 	color: #4d4d4d;
-	font-size: 25px;
+	font-size: 16px;
 	h4{
 		color: #000;
-		padding-bottom: 43px;
-		font-size: 28px;
+		padding-bottom:25px;
+		font-size: 18px;
 	}
 	p{
-		padding-bottom: 35px;
+		padding-bottom: 20px;
+	}
+	address{
+		padding: 45px 0 10px 0;
+		display: block;
+		color: #b2b2b2;
+		font-size: 12px;
+		font-style: normal;
+		text-align: right;
+		a{
+			text-decoration: none;
+		}
 	}
  }
 
